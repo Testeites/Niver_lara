@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background-color: pink;
+    min-width: 400px;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+#nos > div {   
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+#nos > div > p {
+    font-size: 20pt;
+    color: rgb(255, 0, 128);
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    height: 500px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30pt;
+    text-align: center;
+    background-color: rgb(226, 169, 204);
+    overflow: hidden;
+}
+
+span {
+    color: red;
+    font-size: 40pt;
+}
+
+footer {
+    font-size: 15pt;
+    text-align: center;
+    background-color: rgb(221, 139, 189);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}

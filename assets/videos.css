@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background-color: pink;
+    min-width: 400px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Loved by the King', cursive;
+}
+
+h2 {
+    font-size: 30pt;
+    text-align: center;
+    background-color: rgb(226, 169, 204);
+}
+
+footer {
+    font-size: 15pt;
+    text-align: center;
+    background-color: rgb(221, 139, 189);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+a {
+    font-size: 15pt;
+    text-align: center;
+    background-color: rgb(221, 139, 189);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+#video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+[style*="--aspect-ratio"] > :first-child {
+    width: 100%;
+  }
+  
+  [style*="--aspect-ratio"] > img {  
+    height: auto;
+  }
+  
+  @supports (--custom:property) {
+    [style*="--aspect-ratio"] {
+      position: relative;
+    }
+    
+    [style*="--aspect-ratio"]::before {
+      content: "";
+      display: block;
+      padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }
+    
+    [style*="--aspect-ratio"] > :first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }  
+  }
